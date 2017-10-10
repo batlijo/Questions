@@ -1,5 +1,7 @@
 /* what is the difference between the following?
 - what does the . in GuessingGame.prototype mean? Are they both functions? 
+- a function is actually a type of object, and is used just like the dot
+notation used to access a property of an object.
 
 GuessingGame = function () {
 
@@ -7,6 +9,12 @@ GuessingGame = function () {
 
 GuessingGame.prototype = {
 
+};
+Protoypal inheritance: A prototype is a working object instance.
+Objects inherit directly from other objects.
+ie.
+Array.class_name.prototype.method_name = function(first_argument) {
+	// body...
 };
 
 To add a function to GuessingGame define it in the protype object
@@ -153,4 +161,5 @@ while (x < 5) {
 	console.log(x); // prints numbers from 0 to 4
 	x++;
 }
+
 
